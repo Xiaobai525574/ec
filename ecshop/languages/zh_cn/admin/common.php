@@ -147,6 +147,7 @@ $_LANG['14_sms'] = '短信管理';
 $_LANG['15_rec'] = '推荐管理';
 $_LANG['16_email_manage'] = '邮件群发管理';
 $_LANG['18_lead_manage'] = '移动版管理';
+$_LANG['19_distribution_channel'] = '销售渠道管理';
 
 /* 商品管理 */
 $_LANG['01_goods_list'] = '商品列表';
@@ -296,6 +297,9 @@ $_LANG['03_sms_send'] = '发送短信';
 $_LANG['04_sms_charge'] = '账户充值';
 $_LANG['05_sms_send_history'] = '发送记录';
 $_LANG['06_sms_charge_history'] = '充值记录';
+
+// custom 销售渠道
+$_LANG['custom_company_manage'] = '公司管理';
 
 
 

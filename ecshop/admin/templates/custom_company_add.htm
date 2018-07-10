@@ -1,0 +1,59 @@
+{include file="pageheader.htm"}
+<div class="main-div">
+  <form action="custom_company.php" method="post" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+    <table width="100%" id="general-table">
+      <tr>
+        <td  class="label">{$lang.c_company_name}</td>
+        <td>
+          <input type="text" name="company_name" value="{$custom_company.company_name}" size="35" />
+        </td>
+      </tr>
+      <tr>
+        <td  class="label">...</td>
+        <td>
+          <input type="text" name="..." value="..." size="35" />
+        </td>
+      </tr>
+      <tr>
+        <td  class="label">...</td>
+        <td>
+          <input type="text" name="...." value="..." size="35" />
+        </td>
+      </tr>
+      <tr>
+        <td class="label">&nbsp;</td>
+        <td>
+          <input type="submit" value="{$lang.button_submit}" class="button" />
+          <input type="reset" value="{$lang.button_reset}" class="button" />
+          <input type="hidden" name="act" value="{$form_action}" />
+          <input type="hidden" name="company_id" value="{$custom_company.company_id}" />
+        </td>
+      </tr>
+    </table>
+
+  </form>
+</div>
+{insert_scripts files="../js/utils.js,validator.js"}
+<script language="JavaScript">
+  document.forms['theForm'].elements['company_name'].focus();
+  {literal}
+  /**
+   * 检查表单输入的数据
+   */
+  function validate()
+  {
+    validator = new Validator("theForm");
+    validator.required("company_name",    company_name_empty);
+    return validator.passed();
+  }
+
+  onload = function()
+  {
+    // 开始检查订单
+    startCheckOrder();
+    document.forms['theForm'].reset();
+  }
+
+  {/literal}
+</script>
+{include file="pagefooter.htm"}

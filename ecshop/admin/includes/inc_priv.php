@@ -169,4 +169,7 @@ if (!defined('IN_ECS'))
     $purview['wxa_setting']          = 'wxa_setting';
     $purview['leancloud']            = 'leancloud';
 
+//销售渠道权限
+    $purview['custom_company_manage']= 'custom_company_manage';
+
 ?>

@@ -160,4 +160,6 @@ $modules['18_lead_manage']['mobile_setting']        = 'ecmobile_setting.php?act=
 $modules['18_lead_manage']['h5_setting']        = 'h5_setting.php?act=list';//移动版应用配置
 $modules['18_lead_manage']['wxa_setting']        = 'wxa_setting.php?act=list';//小程序应用配置
 
+// custom 销售渠道
+$modules['19_distribution_channel']['custom_company_manage']        = 'custom_company.php?act=list';//销售渠道-公司管理
 ?>
